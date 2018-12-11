@@ -31,11 +31,16 @@ class MovieIndex extends React.Component {
         
     }
     handleSearch(title,num) {
-        this.setState({movieSearched: true, title: title});
+       
       
         searchMovie(title,num)
         .then(res => {
-            this.setState({results: res.results, totalPages: res.total_pages});
+            if(res.results.length > 0) {
+                this.setState({movieSearched: true, title: title});
+                this.setState({results: res.results, totalPages: res.total_pages});
+            } else {
+                alert("Movie does not exist, please try another search");
+            }
         });
     }
     render() {
