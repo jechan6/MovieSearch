@@ -5,7 +5,7 @@ const MovieIndexItem = (props) => {
     return(
         <div className="MovieItem">
              <h1 className="MovieTitle">{movie.title}</h1>
-             <h2>{movie.release_date}</h2>
+             <h4>Release Date: {movie.release_date}</h4>
              <p className="MovieOverview">
                 {movie.overview}
              </p>
