@@ -12,4 +12,4 @@ A challenge I encountered was figuring out how to handle pagination. In the begi
 When a user first loads into the website, I render a list of current popular movies. I did not want my users to load into a blank page that simply had the search form for movie titles.
 
 # Future Improvment
-With more time, I could render a show page when clicked for each movie that shows more information about the movie. I could also look into potentially caching my previous results because at the moment, the application is making an API request each time a user wants to change pages. The UI also needs some work but for this purpose of this assignment, I focused more on the functionality of the application.
+With more time, I could render a show page when clicked for each movie that shows more information about the movie. I could also look into potentially caching my previous results because at the moment, the application is making an API request each time a user wants to change pages. The UI also needs some work but for this purpose of this assignment, I focused more on the core features of the application.
